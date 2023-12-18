@@ -127,7 +127,7 @@ class ListaNomes(AnaliseDados):
     def __iter__(self):
         return iter(self.__lista)
 
-
+# Classe base para análise de dados
 class ListaDatas(AnaliseDados):
     def __init__(self):
         self.__lista = []        
@@ -175,7 +175,7 @@ class ListaDatas(AnaliseDados):
     def __str__(self):
         return ', '.join(str(data) for data in self.__lista)
 
-
+# Classe para lidar com listas de Salarios.
 class ListaSalarios(AnaliseDados):
     def __init__(self):
         self.__lista = []        
@@ -220,7 +220,7 @@ class ListaSalarios(AnaliseDados):
     def __iter__(self):
         return iter(self.__lista)
 
-
+# Classe para lidar com listas de Idades.
 class ListaIdades(AnaliseDados):
     def __init__(self):
         self.__lista = []        
