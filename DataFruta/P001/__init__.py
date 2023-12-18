@@ -1,7 +1,10 @@
+# Importando a classe abstrata ABC (Abstract Base Class) e o método abstrato abstractmethod do módulo abc
 from abc import ABC, abstractmethod
 
+# Definindo uma classe para representar datas
 class Data:
     def __init__(self, dia=1, mes=1, ano=2000):
+      # Validando os valores de entrada para dia, mês e ano  
         if dia < 1 or dia > 31:
             raise ValueError("Dia inválido")
         if mes < 1 or mes > 12:
@@ -12,6 +15,7 @@ class Data:
         self.__mes = mes
         self.__ano = ano
 
+    # Métodos getter e setter para dia, mês e ano com validação
     @property
     def dia(self):
         return self.__dia
