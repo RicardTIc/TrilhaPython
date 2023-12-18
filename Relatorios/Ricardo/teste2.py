@@ -1,14 +1,7 @@
 
     
-    # Representação em string da data
-    def __str__(self):
-        return "{}/{}/{}".format(self.__dia, self.__mes, self.__ano)
-
-    # Comparação de igualdade entre duas datas
-    def __eq__(self, outraData):
-        return (self.__dia, self.__mes, self.__ano) == (outraData.__dia, outraData.__mes, outraData.__ano)
     
-    # Comparação para menor que entre duas datas
+    
     def __lt__(self, outraData):
         return (self.__ano, self.__mes, self.__dia) < (outraData.__ano, outraData.__mes, outraData.__dia)
     
