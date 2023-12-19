@@ -12,7 +12,8 @@
 
  **indice**
 
- - <a href="./DataFruta/DescriçaodasAtividades.md">Descrição do projeto</a>
+ - <a href="./DataFruta/DescriçaodasAtividades.md">Descrição do projeto DataFruta</a>
+  - <a href="./DataFruta_V1/RevisãodasAtividades.md">Revisao do projeto DataFruta_V1</a>
   - <a href="./Relatorios/">Relatorios</a>
 
  **Tecnologias ultilizadas**
@@ -32,5 +33,5 @@
 | Thiago Leite    | [thiagoleite22@hotmail.com](mailto:thiagoleite22@hotmail.com) |[Thiago](https://github.com/Leitetc/TrilhaPython.git)|[ThiagoLeite](https://github.com/eduardsroch/TrilhaPython/tree/ThiagoLeite)  
 | Eduardo Rocha   | [nixeo.dev@gmail.com](mailto:nixeo.dev@gmail.com)| [Eduardo](https://github.com/eduardsroch/TrilhaPython/tree/LuisRocha)|[LuisRocha](https://github.com/eduardsroch/TrilhaPython/tree/LuisRocha)  
 | Nairan Santos   | [nairanbsantos28@gmail.com](mailto:nairanbsantos28@gmail.com) | [Nairan](https://github.com/nairansantos/TrilhaPython)|[Nairan](https://github.com/eduardsroch/TrilhaPython/tree/nairan)  
-| Arthur Gobira   | [arthurgobira5@gmail.com](mailto:arthurgobira5@gmail.com)| 
+| Arthur Gobira   | [arthurgobira5@gmail.com](mailto:arthurgobira5@gmail.com)| [Arthur](https://github.com/GobiraArthur/TrilhaPython)|[ArthutGobira](https://github.com/eduardsroch/TrilhaPython/tree/ArthutGobira) 
 | Ricardo dos Santos   | [cat-richard@hotmail.com](mailto:cat-richard@hotmail.com) |
