@@ -1,7 +1,10 @@
+# Importando a classe abstrata ABC (Abstract Base Class) e o método abstrato abstractmethod do módulo abc
 from abc import ABC, abstractmethod
 
+# Definindo uma classe para representar datas
 class Data:
     def __init__(self, dia=1, mes=1, ano=2000):
+      # Validando os valores de entrada para dia, mês e ano  
         if dia < 1 or dia > 31:
             raise ValueError("Dia inválido")
         if mes < 1 or mes > 12:
@@ -12,6 +15,7 @@ class Data:
         self.__mes = mes
         self.__ano = ano
 
+    # Métodos getter e setter para dia, mês e ano com validação
     @property
     def dia(self):
         return self.__dia
@@ -42,19 +46,23 @@ class Data:
             raise ValueError("Ano inválido")
         self.__ano = ano
     
+    # Representação em string da data
     def __str__(self):
         return "{}/{}/{}".format(self.__dia, self.__mes, self.__ano)
-
+    
+    # Comparação de igualdade entre duas datas
     def __eq__(self, outraData):
         return (self.__dia, self.__mes, self.__ano) == (outraData.__dia, outraData.__mes, outraData.__ano)
     
+    # Comparação para menor que entre duas datas
     def __lt__(self, outraData):
         return (self.__ano, self.__mes, self.__dia) < (outraData.__ano, outraData.__mes, outraData.__dia)
     
+     # Comparação para maior que entre duas datas
     def __gt__(self, outraData):
         return (self.__ano, self.__mes, self.__dia) > (outraData.__ano, outraData.__mes, outraData.__dia)
 
-
+# Definindo uma classe abstrata para análise de dados
 class AnaliseDados(ABC): 
     @abstractmethod
     def entrada_de_dados(self):
@@ -80,11 +88,12 @@ class AnaliseDados(ABC):
     def __iter__(self):
         pass
 
-
+# Classe para lidar com listas de nomes, herdando de AnaliseDados
 class ListaNomes(AnaliseDados):
     def __init__(self):
-        self.__lista = []        
-
+        self.__lista = [] 
+               
+    # Método para inserir nomes na lista
     def entrada_de_dados(self):
         try:
             quantidade = int(input("Quantos nomes deseja inserir? "))
@@ -118,7 +127,7 @@ class ListaNomes(AnaliseDados):
     def __iter__(self):
         return iter(self.__lista)
 
-
+# Classe base para análise de dados
 class ListaDatas(AnaliseDados):
     def __init__(self):
         self.__lista = []        
@@ -166,7 +175,7 @@ class ListaDatas(AnaliseDados):
     def __str__(self):
         return ', '.join(str(data) for data in self.__lista)
 
-
+# Classe para lidar com listas de Salarios.
 class ListaSalarios(AnaliseDados):
     def __init__(self):
         self.__lista = []        
@@ -211,7 +220,7 @@ class ListaSalarios(AnaliseDados):
     def __iter__(self):
         return iter(self.__lista)
 
-
+# Classe para lidar com listas de Idades.
 class ListaIdades(AnaliseDados):
     def __init__(self):
         self.__lista = []        
